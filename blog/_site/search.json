@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "posts/my-first-post.html",
+    "href": "posts/my-first-post.html",
+    "title": "Welcome to My Physics Blog",
+    "section": "",
+    "text": "Hello! This is the start of my blog about physics, math, and everything in between.\nHere I’ll write notes, derivations, and share ideas."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

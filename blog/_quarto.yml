@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Stanley's Science Blog"
+  site-url: "/blog/"     # IMPORTANT for GitHub Pages path
+  navbar:
+    right:
+      - text: "Home"
+        href: "/"        # link back to your main site root
+      - text: "Blog"
+        href: "/blog/"  # current blog home
+
+output-dir: docs          # default build folder inside blogs/
+
+format:
+  html:
+    theme: cosmo          # or another from quarto themes
+    toc: true
+    toc-depth: 2

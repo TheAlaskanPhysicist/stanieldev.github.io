@@ -1,0 +1,10 @@
+---
+title: "Welcome to My Physics Blog"
+author: Stanley
+date: 2025-05-25
+categories: [Introduction]
+---
+
+Hello! This is the start of my blog about physics, math, and everything in between.
+
+Here I’ll write notes, derivations, and share ideas.
