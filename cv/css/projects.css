@@ -26,7 +26,7 @@
     font-weight: bold;
     text-decoration: none;
 }
-.projects-item > .header > .left > .place {
+.projects-item > .header > .left > .university {
     /* Text */
     color: var(--text-black);
     text-decoration: none;
