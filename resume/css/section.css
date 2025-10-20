@@ -18,7 +18,7 @@
     border-top: 2px solid var(--text-black);
 
     /*Add more space between sections*/
-    margin-bottom: calc(var(--list-padding) * 1.25);
+    margin-bottom: calc(var(--list-vertical-padding) * 1.25);
 }
 .section-list {}
 .section-list > hr {
@@ -26,6 +26,6 @@
     border-top: 1px solid var(--text-gray);
 
     /*Add more space between sections*/
-    margin-top: calc(var(--list-padding) * 2);
-    margin-bottom: calc(var(--list-padding) * 2);
+    margin-top: calc(var(--list-vertical-padding) * 2);
+    margin-bottom: calc(var(--list-vertical-padding) * 2);
 }

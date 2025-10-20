@@ -1,18 +1,18 @@
-/* Project Boxes */
-#projects-list {}
-.projects-item {}
-.projects-item > .header {
+/* Teaching Experience Boxes */
+#teaching-experience-list {}
+.teaching-experience-item {}
+.teaching-experience-item > .class {
     /* Flex */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.projects-item > .header > .left {
+.teaching-experience-item > .class > .left {
     /* Flex */
     display: flex;
     flex-direction: column;
 }
-.projects-item > .header > .right {
+.teaching-experience-item > .class > .right {
     /* Flex */
     display: flex;
     flex-direction: column;
@@ -20,29 +20,38 @@
 }
 
 /* Item Classes */
-.projects-item > .header > .left > .title {
+.teaching-experience-item > .title > .position {
+    /* Text */
+    color: var(--text-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+.teaching-experience-item > .title > .university {
     /* Text */
     color: var(--text-blue);
     font-weight: bold;
     text-decoration: none;
 }
-.projects-item > .header > .left > .university {
-    /* Text */
-    color: var(--text-black);
-    text-decoration: none;
-}
-.projects-item > .header > .right > .date {
+
+
+
+
+
+
+
+
+.teaching-experience-item > .class > .right > .date {
     /* Text */
     color: var(--text-black);
     font-style: italic;
     text-decoration: none;
 }
-.projects-item > .list {
+.teaching-experience-item > .list {
     list-style-type: ">   ";
     margin: var(--list-vertical-padding) 0 0 0;
     line-height: var(--list-spacing);
 }
-.projects-item > p {
-    margin: var(--list-vertical-padding) var(--list-vertical-padding) 0 var(--list-vertical-padding);
+.teaching-experience-item > p {
+    margin: var(--list-vertical-padding) var(--list-vertical-padding) 0 var(--list-horizontal-padding);
     line-height: var(--list-spacing);
 }

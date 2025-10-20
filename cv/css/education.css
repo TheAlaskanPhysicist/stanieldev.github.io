@@ -20,14 +20,29 @@
 }
 
 /* Item Classes */
-.education-item > .header > .left > .title > a,
-.education-item > .header > .left > .title {
+.education-item > .header > .left > .title > .degree {
+    /* Text */
+    color: var(--text-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+.education-item > .header > .left > .title > .university {
     /* Text */
     color: var(--text-blue);
     font-weight: bold;
     text-decoration: none;
 }
-.education-item > .header > .left > .place {
+.education-item > .header > .left > .thesis {
+    /* Text */
+    font-style: italic;
+    color: var(--text-black);
+}
+.education-item > .header > .left > .advisors > a {
+    /* Text */
+    color: var(--text-black);
+    text-decoration: none;
+}
+.education-item > .header > .left > .minors > a {
     /* Text */
     color: var(--text-black);
     text-decoration: none;
@@ -43,8 +58,8 @@
     color: var(--text-black);
     text-decoration: none;
 }
-.education-item > .list {
-    list-style-type: ">   ";
-    margin: var(--list-padding) 0 0 0;
-    line-height: var(--list-spacing);
-}
+/*.education-item > .list {*/
+/*    list-style-type: ">   ";*/
+/*    margin: var(--list-padding) 0 0 0;*/
+/*    line-height: var(--list-spacing);*/
+/*}*/

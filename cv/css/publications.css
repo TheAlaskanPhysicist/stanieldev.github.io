@@ -1,0 +1,139 @@
+/* Publications Boxes */
+#publication-list {}
+.publication-subsection {}
+.publication-subsection > .header {
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Item Classes */
+.publication-subsection > h3 {
+    /* Text */
+    color: var(--text-black);
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    margin: var(--list-vertical-padding) 0 var(--list-vertical-padding) 0;
+}
+
+/* Preprint Classes */
+.publication-subsection > .preprint-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: preprint-counter; /* initialize counter */
+}
+
+.publication-subsection > .preprint-list > .preprint-item {
+    counter-increment: preprint-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.publication-subsection > .preprint-list > .preprint-item::before {
+    content: counter(preprint-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Manuscript Classes */
+.publication-subsection > .manuscript-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: manuscript-counter; /* initialize counter */
+}
+
+.publication-subsection > .manuscript-list > .manuscript-item {
+    counter-increment: manuscript-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.publication-subsection > .manuscript-list > .manuscript-item::before {
+    content: counter(manuscript-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Peer-Reviewed Journals Classes */
+.publication-subsection > .journal-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: journal-counter; /* initialize counter */
+}
+
+.publication-subsection > .journal-list > .journal-item {
+    counter-increment: journal-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.publication-subsection > .journal-list > .journal-item::before {
+    content: counter(journal-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Refereed Conference Papers Classes */
+.publication-subsection > .conference-paper-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: conference-paper-counter; /* initialize counter */
+}
+
+.publication-subsection > .conference-paper-list > .conference-paper-item {
+    counter-increment: conference-paper-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.publication-subsection > .conference-paper-list > .conference-paper-item::before {
+    content: counter(conference-paper-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Other Papers Classes */
+.publication-subsection > .other-paper-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: other-paper-counter; /* initialize counter */
+}
+
+.publication-subsection > .other-paper-list > .other-paper-item {
+    counter-increment: other-paper-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.publication-subsection > .other-paper-list > .other-paper-item::before {
+    content: counter(other-paper-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}

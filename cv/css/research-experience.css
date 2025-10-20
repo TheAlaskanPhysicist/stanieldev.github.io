@@ -1,4 +1,4 @@
-/* Experience Boxes */
+/* Research Experience Boxes */
 #research-experience-list {}
 .research-experience-item {}
 .research-experience-item > .header {
@@ -20,17 +20,28 @@
 }
 
 /* Item Classes */
-.research-experience-item > .header > .left > .title {
+.research-experience-item > .header > .left > .title > .position {
+    /* Text */
+    color: var(--text-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+.research-experience-item > .header > .left > .title > .group {
     /* Text */
     color: var(--text-blue);
     font-weight: bold;
     text-decoration: none;
 }
-.research-experience-item > .header > .left > .university {
+.research-experience-item > .header > .left > .project {
     /* Text */
+    font-style: italic;
     color: var(--text-black);
-    text-decoration: none;
 }
+
+
+
+
+
 .research-experience-item > .header > .right > .date {
     /* Text */
     color: var(--text-black);
@@ -39,6 +50,10 @@
 }
 .research-experience-item > .list {
     list-style-type: ">   ";
-    margin: var(--list-vertical-padding) 0;
+    margin: var(--list-vertical-padding) 0 0 0;
+    line-height: var(--list-spacing);
+}
+.research-experience-item > p {
+    margin: var(--list-vertical-padding) var(--list-vertical-padding) 0 var(--list-horizontal-padding);
     line-height: var(--list-spacing);
 }

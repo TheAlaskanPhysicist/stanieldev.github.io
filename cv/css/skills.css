@@ -2,7 +2,7 @@
 #skills-list {}
 .skills-item {
     /* Size */
-    margin-bottom: var(--list-padding);
+    margin-bottom: var(--list-vertical-padding);
 }
 
 /* Item Classes */

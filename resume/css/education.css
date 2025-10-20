@@ -27,7 +27,7 @@
     font-weight: bold;
     text-decoration: none;
 }
-.education-item > .header > .left > .place {
+.education-item > .header > .left > .university {
     /* Text */
     color: var(--text-black);
     text-decoration: none;
@@ -45,6 +45,6 @@
 }
 .education-item > .list {
     list-style-type: ">   ";
-    margin: var(--list-padding) 0;
+    margin: var(--list-vertical-padding) 0;
     line-height: var(--list-spacing);
 }

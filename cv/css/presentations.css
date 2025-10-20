@@ -1,0 +1,91 @@
+/* Presentation Boxes */
+#presentation-list {}
+.presentation-subsection {}
+.presentation-subsection > .header {
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Item Classes */
+.presentation-subsection > h3 {
+    /* Text */
+    color: var(--text-black);
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    margin: var(--list-vertical-padding) 0 var(--list-vertical-padding) 0;
+}
+
+/* Conference Poster Classes */
+.presentation-subsection > .conference-poster-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: conference-poster-counter; /* initialize counter */
+}
+
+.presentation-subsection > .conference-poster-list > .conference-poster-item {
+    counter-increment: conference-poster-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.presentation-subsection > .conference-poster-list > .conference-poster-item::before {
+    content: counter(conference-poster-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Presentations Classes */
+.presentation-subsection > .presentation-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: presentation-counter; /* initialize counter */
+}
+
+.presentation-subsection > .presentation-list > .presentation-item {
+    counter-increment: presentation-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.presentation-subsection > .presentation-list > .presentation-item::before {
+    content: counter(presentation-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
+
+/* Other Presentations Classes */
+.presentation-subsection > .other-presentation-list {
+    margin: 0 0 0 var(--list-horizontal-padding);
+    line-height: var(--list-spacing);
+
+    /* Numbering */
+    counter-reset: other-presentation-counter; /* initialize counter */
+}
+
+.presentation-subsection > .other-presentation-list > .other-presentation-item {
+    counter-increment: other-presentation-counter; /* increment for each item */
+    position: relative;
+    padding-left: 2em; /* space for the number */
+    margin: var(--list-vertical-padding) 0 0 0;
+}
+
+.presentation-subsection > .other-presentation-list > .other-presentation-item::before {
+    content: counter(other-presentation-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-black); /* match text color */
+    font-weight: bold;
+}
