@@ -45,6 +45,6 @@
 }
 .education-item > .list {
     list-style-type: ">   ";
-    margin: var(--list-padding) 0;
+    margin: var(--list-vertical-padding) 0;
     line-height: var(--list-spacing);
 }

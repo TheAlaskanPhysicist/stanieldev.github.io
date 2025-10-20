@@ -21,7 +21,7 @@
         gap: var(--section-padding);
     }
 
-    .experience-item, .education-item, .skills-item, .award-item {
+    .research-experience-item, .education-item, .skills-item, .award-item {
         /* Avoid breaking inside these elements */
         page-break-inside: avoid;
     }

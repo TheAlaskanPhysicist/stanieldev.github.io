@@ -20,6 +20,7 @@
 
     /* Section Paddings */
     --section-padding: 0.5cm;
-    --list-padding: 0.5em;
+    --list-horizontal-padding: 1.5em;
+    --list-vertical-padding: 0.5em;
     --list-spacing: 1.15em;
 }
